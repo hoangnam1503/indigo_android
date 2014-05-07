@@ -2,7 +2,10 @@ package com.indigo.indigo_android.service;
 
 import android.app.Activity;
 import android.content.Context;
+import com.indigo.indigo_android.R;
+import com.indigo.indigo_android.activity.HomeActivity;
 import com.parse.Parse;
+import com.parse.ParseInstallation;
 import com.parse.PushService;
 
 /**
@@ -15,7 +18,7 @@ public class ParseService {
     }
 
     public void start(Activity activity) {
-        PushService.setDefaultPushCallback(activity.getApplicationContext(), TopActivity.class);
-        PushService.setDefaultPushCallback();
+        PushService.setDefaultPushCallback(activity.getApplicationContext(), HomeActivity.class, R.drawable.icon);
+        ParseInstallation.getCurrentInstallation().saveInBackground();
     }
 }
