@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="Theme" parent="android:Animation"></style>
+
+    <style name="Theme.Base" parent="android:Theme">
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:screenOrientation">portrait</item>
+
+        <item name="android:buttonBarStyle">@android:style/ButtonBar</item>
+        <item name="android:buttonBarButtonStyle">@android:style/Widget.Button</item>
+    </style>
+
+    <style name="Theme.Indigo" parent="Theme.Base"></style>
+</resources>

@@ -1,21 +1,21 @@
 package com.indigo.indigo_android.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import com.indigo.indigo_android.R;
-import com.indigo.indigo_android.base.FragmentActivityBase;
 
 /**
  * Created by hoang_nam on 2014/05/07.
  */
-public class SplashActivity extends FragmentActivityBase {
+public class SplashActivity extends Activity {
     private String action = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.splash_activity);
+        setContentView(R.layout.activity_splash);
 
         Intent intent = getIntent();
         action = intent.getAction();
