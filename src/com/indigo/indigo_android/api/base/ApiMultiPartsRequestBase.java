@@ -2,7 +2,6 @@ package com.indigo.indigo_android.api.base;
 
 import android.content.Context;
 import com.android.volley.*;
-import com.android.volley.toolbox.ByteArrayPool;
 import com.parse.entity.mime.MultipartEntity;
 import com.parse.entity.mime.content.FileBody;
 import com.parse.entity.mime.content.StringBody;
