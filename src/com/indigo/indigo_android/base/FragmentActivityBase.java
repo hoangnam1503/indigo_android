@@ -1,26 +1,26 @@
-/*
 package com.indigo.indigo_android.base;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import com.indigo.indigo_android.adapter.TabsPagerAdapter;
+import android.widget.TabHost.OnTabChangeListener;
 
-*/
+import com.indigo.indigo_android.adapter.TabsPagerAdapter;
+import com.indigo.indigo_android.utility.PagerSlidingTabStrip;
+
 /**
  * Created by hoang_nam on 2014/05/07.
- *//*
+ */
 
-public abstract class FragmentActivityBase extends ActionBarActivity implements ActionBar.TabListener {
+public abstract class FragmentActivityBase extends ActionBarActivity implements ActionBar.TabListener, OnTabChangeListener {
     public static final int REQUEST_CODE_BASIC = 1;
     protected ViewPager viewPager = null;
     protected ActionBar actionBar = null;
     protected TabsPagerAdapter tabsPagerAdapter = null;
+    protected PagerSlidingTabStrip pagerTabStrip;
 
     protected String[] tabs = {"Time", "List", "Schedule"};
 
@@ -53,4 +53,3 @@ public abstract class FragmentActivityBase extends ActionBarActivity implements 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {}
 }
-*/
